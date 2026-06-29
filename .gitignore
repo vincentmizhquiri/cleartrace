@@ -1,0 +1,13 @@
+# Dataset — too large for GitHub, lives locally only
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+
+# Mac system files
+.DS_Store

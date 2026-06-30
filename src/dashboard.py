@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from src.ingest import load_transactions, get_summary
-from src.queue import build_queue, get_queue_summary
+from src.alert_queue import build_queue, get_queue_summary
 
 # --- Page config ---
 st.set_page_config(
@@ -132,7 +132,7 @@ def highlight_row(row):
         return [""] * len(row)
 
 st.dataframe(
-    display_df.style.apply(highlight_row, axis=1),
+    display_df.head(1000),
     use_container_width=True,
     height=500
 )

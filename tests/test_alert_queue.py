@@ -9,7 +9,7 @@ import sys
 import os
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-from src.queue import build_queue, get_queue_summary
+from src.alert_queue import build_queue, get_queue_summary
 
 
 # --- Fixtures ---
